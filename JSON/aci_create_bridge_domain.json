@@ -1,0 +1,32 @@
+{
+	"fvBD": {
+		"attributes": {
+			"dn": "uni/tn-Shipping/BD-DB_Internal",
+			"mac": "00:22:BD:F8:19:FF",
+			"name": "DB_Internal",
+			"rn": "BD-DB_Internal",
+			"status": "created"
+		},
+		"children": [{
+				"fvSubnet": {
+					"attributes": {
+						"dn": "uni/tn-Shipping/BD-DB_Internal/subnet-[10.10.10.1/24]",
+						"ip": "10.10.10.1/24",
+						"rn": "subnet-[10.10.10.1/24]",
+						"status": "created"
+					},
+					"children": []
+				}
+			},
+			{
+				"fvRsCtx": {
+					"attributes": {
+						"tnFvCtxName": "Internal",
+						"status": "created,modified"
+					},
+					"children": []
+				}
+			}
+		]
+	}
+}

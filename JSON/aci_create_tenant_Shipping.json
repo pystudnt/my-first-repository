@@ -1,0 +1,11 @@
+{
+	"fvTenant": {
+		"attributes": {
+			"dn": "uni/tn-Shipping",
+			"name": "Shipping",
+			"rn": "tn-shipping",
+			"status": "created"
+		}
+		"children": []
+	}
+}

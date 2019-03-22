@@ -1,0 +1,64 @@
+module npdesi-course {
+
+  yang-version "1";
+
+  // namespace
+  namespace "http://npdesi.cisco.com/training";
+
+  prefix "npdesi";
+  
+  // Try to get the imports to work in the lab
+
+  // import some basic types
+  // import openconfig-vlan-types { prefix oc-vlan-types; }
+  // import openconfig-interfaces { prefix oc-if; }
+  // import openconfig-if-ethernet { prefix oc-eth; }
+  // import openconfig-if-aggregate { prefix oc-lag; }
+  // import iana-if-type { prefix ift; }
+  //  import openconfig-extensions { prefix oc-ext; }
+
+ // meta
+  organization "Cisco Inc.";
+
+  contact
+    "chuck@npdesi.cisco.com";
+
+  description
+    "Here is a module that is used for basic switch configuration";
+
+   revision "2017-03-15" {
+    description
+      "NPDESI COURSE MODULE";
+    reference "1.0.2";
+  }
+
+container system {
+	description "DNS and Name info";
+ 	leaf hostname{
+		type string;
+		description "This is the hostname";
+	}
+
+	leaf-list dns-servers{
+		type string;
+		description "This is the DNS Server";
+        } 
+     }
+                             
+container vlans{
+	description "Vlan Information";
+ 	leaf vlanid{
+	//	type string;
+		description "This is the Vlan";
+		type uint16;
+ 	//		range "1 .. 4096";
+	//   something busted on range
+	}
+
+	leaf name{
+		type string;
+		description "This is the vlan name";
+        }                             
+      }
+     }
+
